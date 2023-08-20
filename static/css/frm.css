@@ -1,0 +1,56 @@
+:root{
+    --header-height: 3.5rem;
+    --nav-width: 219px;
+    /* Colores */
+    --backgroundPage:  #e7e3ea;
+    --background-header: #6a998c;
+    --backgroundRight: #b0d6cf;
+    --first-color: #2c8c79;
+    --first-color-light: #e7e3ea;
+    --text-color-light: #19181b;
+}
+
+
+
+body{
+	padding-top: 1.5rem
+}      
+
+.col-lg-6{
+	border-radius: 5px;
+}
+
+.titulos{
+		display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10vh;
+}
+
+.btn-sm{
+	margin-right: 10px;
+	border-radius: 50%;
+}
+
+.bx-arrow-back{
+	color: white;
+}
+
+h1{
+	color: var(--first-color);
+}
+
+label{
+	color: var(--text-color-light);
+}
+
+
+.botones{
+	display: flex;
+	justify-content: end;
+	margin-top: 1.5rem;
+}
+
+.btn-success{
+	margin-right: 1rem;
+}

@@ -1,0 +1,60 @@
+
+    <!-- CONTENIDO -->
+    <main >
+        <section>
+          <div class="container">
+            <div class="agregar">
+              <h1>Lista de Clientes</h1>
+              <a href="/clientes/create"><i class='bx bxs-plus-circle active'></i></a>
+              
+            </div>
+            
+          <table class="table table-striped table-bordered table-dark">
+            <thead>
+              <tr>
+                <th>CODIGO</th>
+                <th>NUMERO_DOC</th>
+                <th>NOMBRE</th>
+                <th>TELEFONO</th>
+                <th>DIRECCION</th>
+                <th>EMAIL</th>
+                <th>DISTRITO</th>
+                <th>ACCIONES</th>
+              </tr>
+            </thead>
+            <tbody class="table table-striped table-bordered table-dark text-center">
+                {{#each clientes}}
+                <tr>
+                    <td>{{this.id}}</td>
+                    <td>{{this.NUMERO}}</td>
+                    <td>{{this.NOMBRE}}</td>
+                    <td>{{this.TELEFONO}}</td>
+                    <td>{{this.DIRECCION}}</td>
+                    <td>{{this.EMAIL}}</td>
+                    <td>{{this.DISTRITO}}</td>
+
+                      <td class="acciones">
+						
+                  		<a class="btn btn-success btn-sm" href="/clientes/{{this.id}}/edit">
+                    		<span title="Editar Registro de Clientes"></span><i class="bx bxs-pencil"></i>
+                  		</a>
+                  		<a class="btn btn-danger btn-sm" href="/clientes/{{this.id}}/delete" onclick="return confirm('Está seguro de querer eliminar el registro')">
+                    		<span title="Eliminar Registro"></span>
+                    		<i class="bx bxs-trash"></i>
+                  		</a>
+                	</td>
+                        
+                </tr>
+                {{/each}}
+            </tbody>
+
+          </table>
+          </div>
+        </section>
+      </main>
+        
+    
+    <script src="./js/menu.js"></script>
+  
+</body>
+</html>
